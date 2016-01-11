@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>gosha</name>
+    <description lang="en">Custom Gentoo Overlay from Gosha.</description>
+    <homepage>https://github.com/Gosha/personal-overlay</homepage>
+    <owner type="person">
+      <name>Gosha</name>
+      <email>gosha.za@gmail.com</email>
+    </owner>
+    <source type="git">https://github.com/Gosha/persona-overlay.git</source>
+    <feed>https://github.com/Gosha/personal-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
