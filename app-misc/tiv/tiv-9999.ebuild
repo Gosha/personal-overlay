@@ -15,10 +15,8 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 
-# Also uses ljpeg, but I don't know where that came from,
-# maybe media-libs/jpeg-turbo?
 IUSE="vala"
-DEPEND="vala? ( dev-lang/vala x11-libs/gdk-pixbuf[jpeg] )"
+DEPEND="vala? ( dev-lang/vala x11-libs/gdk-pixbuf[jpeg] ) virtual/jpeg"
 RDEPEND="${DEPEND}"
 
 src_compile(){
