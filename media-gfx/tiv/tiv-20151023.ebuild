@@ -11,7 +11,6 @@ HOMEPAGE="https://github.com/radare/${PN}"
 EGIT_REPO_URI="${HOMEPAGE}"
 EGIT_COMMIT="6f2e225822bd11b762bf4916c1bf9a588b3da34b"
 
-# Some weird personal license
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"

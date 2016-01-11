@@ -10,7 +10,6 @@ DESCRIPTION="the terminal image viewer"
 HOMEPAGE="https://github.com/radare/${PN}"
 EGIT_REPO_URI="${HOMEPAGE}"
 
-# Some weird personal license
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
