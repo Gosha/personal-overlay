@@ -15,19 +15,25 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 
-# USEFLAGS = x11-libs/gdk-pixbuf jpeg
-IUSE=vala
-DEPEND="x11-libs/gdk-pixbuf[jpeg] vala? ( dev-lang/vala )"
-elog "$DEPEND"
+# Also uses ljpeg, but I don't know where that came from,
+# maybe media-libs/jpeg-turbo?
+IUSE="vala"
+DEPEND="vala? ( dev-lang/vala x11-libs/gdk-pixbuf[jpeg] )"
 RDEPEND="${DEPEND}"
 
 src_compile(){
-    emake VALAC="$(type -P valac-$(vala_best_api_version))"
+    if use vala; then
+        emake VALAC="$(type -P valac-$(vala_best_api_version))"
+    else
+        emake stiv-jpeg
+    fi
 }
 
 src_install() {
     # Something is weird
     #emake DESTDIR="${D}" install
-    dobin tiv
+    if use vala; then
+        dobin tiv
+    fi
     dobin stiv-jpeg
 }
