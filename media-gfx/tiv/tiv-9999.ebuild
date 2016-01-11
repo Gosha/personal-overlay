@@ -12,7 +12,7 @@ EGIT_REPO_URI="${HOMEPAGE}"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS=""
 
 IUSE="vala"
 DEPEND="vala? ( dev-lang/vala x11-libs/gdk-pixbuf[jpeg] ) virtual/jpeg"
