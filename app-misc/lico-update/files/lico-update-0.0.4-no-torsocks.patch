@@ -1,0 +1,24 @@
+diff --git a/_official/lico-update.sh b/_official/lico-update.sh
+index e15258e..a88bb14 100755
+--- a/_official/lico-update.sh
++++ b/_official/lico-update.sh
+@@ -158,7 +158,6 @@ SOCAT=$( getBin socat 2>/dev/null )
+ SORT=$( getBin sort 2>/dev/null )
+ SYSCTL=$( getBin sysctl 2>/dev/null )
+ TAIL=$( getBin tail 2>/dev/null )
+-TORSOCKS=$( getBin torsocks 2>/dev/null )
+ UNAME=$( getBin uname 2>/dev/null )
+ UNIQ=$( getBin uniq 2>/dev/null )
+ W=$( getBin w 2>/dev/null )
+@@ -306,11 +305,6 @@ if [ -z "${1}" ]; then
+     exit 1
+ fi
+ 
+-if [ "${TORSOCKS}" != "" ]; then
+-    echo "> torsocks available, will proxy curl commands"
+-    CURL="$TORSOCKS $CURL"
+-fi
+-
+ interactive=0
+ showdata=0
+ senddata=0
