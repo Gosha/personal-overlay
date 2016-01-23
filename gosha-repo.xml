@@ -8,7 +8,7 @@
       <name>Gosha</name>
       <email>gosha.za@gmail.com</email>
     </owner>
-    <source type="git">https://github.com/Gosha/persona-overlay.git</source>
+    <source type="git">https://github.com/Gosha/personal-overlay.git</source>
     <feed>https://github.com/Gosha/personal-overlay/commits/master.atom</feed>
   </repo>
 </repositories>
